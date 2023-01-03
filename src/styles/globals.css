@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.placeholder:after {
+  content: "type '/' for commands!";
+  position: absolute;
+  top: 0;
+  color: #9A9A97;
+}
+
+.drag-item .drag-icon {
+  opacity: 0;
+}
+
+.drag-item:hover .drag-icon {
+  opacity: 100;
+  transition: all .3s;
+}
